@@ -30,25 +30,13 @@
 
 ---
 
-## 📸 Screenshots
-
-_(Add your own screenshots here to show features like card counts, total counters, etc.)_
-
----
-
 ## 🔐 Permissions
 
 This extension requests the following Chrome permissions:
 
 - **Host Permission** for `https://trello.com/*` – to enhance the Trello board interface.
 - **Scripting** – to inject JavaScript/CSS into Trello pages.
-- _(Optional)_ **Storage** – to store user preferences (e.g., toggle features).
-- _(Optional)_ **Tabs** – if interaction with browser tabs is needed.
+- **Storage** – to store user preferences (e.g., toggle features).
+- **Tabs** – if interaction with browser tabs is needed.
 
 No data is collected, stored remotely, or sent anywhere. Your usage stays 100% local.
-
----
-
-## 🛠 Developer Notes
-
-- Mahesh Thorat
