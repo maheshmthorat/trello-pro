@@ -6,7 +6,7 @@
 
 ## 🚀 Install Now
 
-[![Install from Chrome Web Store](https://developer.chrome.com/static/images/branding/badge-chrome-store.svg)](https://chromewebstore.google.com/detail/trello-pro/dknhbjnfdaejagmfjlenckdaaodchcha?hl=en-GB)
+[![🔗 Install on Chrome](https://img.shields.io/badge/Install%20on-Chrome%20Web%20Store-blue?logo=google-chrome&style=flat)](https://chromewebstore.google.com/detail/trello-pro/dknhbjnfdaejagmfjlenckdaaodchcha?hl=en-GB)
 
 ---
 
