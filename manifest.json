@@ -13,7 +13,7 @@
   },
   "content_scripts": [
     {
-      "css": ["trello-pro.css"],
+      "css": ["css/trello-pro.css"],
       "js": ["trello-pro.js"],
       "run_at": "document_idle",
       "matches": ["https://trello.com/*"]
@@ -23,10 +23,14 @@
     "service_worker": "background.js"
   },
   "action": {
+    "default_popup": "options.html",
     "default_icon": {
       "16": "icon.png",
       "48": "icon.png",
       "128": "icon.png"
     }
+  },
+  "options_ui": {
+    "page": "options.html"
   }
 }

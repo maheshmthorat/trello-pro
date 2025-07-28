@@ -4,6 +4,12 @@
 
 ---
 
+## 🚀 Install Now
+
+[![Install from Chrome Web Store](https://developer.chrome.com/static/images/branding/badge-chrome-store.svg)](https://chromewebstore.google.com/detail/trello-pro/dknhbjnfdaejagmfjlenckdaaodchcha?hl=en-GB)
+
+---
+
 ## ✨ Features
 
 - 🔢 **Card Count Per List**  
@@ -18,25 +24,36 @@
 - ⚙️ **Fast, Lightweight, and API-Free**  
   All features run directly in your browser. No API keys or third-party services used.
 
----
-
-## 🚀 Installation
-
-1. Download or clone this repository.
-2. Open Chrome and navigate to [`chrome://extensions`](chrome://extensions).
-3. Enable **Developer Mode** (top-right).
-4. Click **Load Unpacked** and select the extension folder.
-5. Open Trello and enjoy enhanced functionality!
+- 🖼️ **Hide Card Cover**  
+  Automatically hides image covers from cards for a cleaner and more compact Trello board view.
 
 ---
+
+## 📸 Screenshots
+
+![Before / After](/screenshots/Before-After.png)
+![Options](/screenshots/Options.png)
 
 ## 🔐 Permissions
 
-This extension requests the following Chrome permissions:
+This extension requests:
 
-- **Host Permission** for `https://trello.com/*` – to enhance the Trello board interface.
-- **Scripting** – to inject JavaScript/CSS into Trello pages.
-- **Storage** – to store user preferences (e.g., toggle features).
-- **Tabs** – if interaction with browser tabs is needed.
+- **Host Permission** for `https://trello.com/*`
+- **Scripting** to inject enhancements
+- **Storage** to save settings
+- **Tabs** for tab awareness
 
-No data is collected, stored remotely, or sent anywhere. Your usage stays 100% local.
+> ✅ No data is sent anywhere — 100% local and secure.
+
+---
+
+## 👨‍💻 Author
+
+**Mahesh Thorat**  
+[GitHub](https://github.com/) • [Portfolio](#) • [X / Twitter](#)
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
