@@ -5,9 +5,98 @@
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
   </head>
   <body>
-    <h3>Options for Trello</h3>
-
+    <h2>Options for Trello</h2>
+    <hr />
     <div class="options-wrapper">
+      <h3>Choose Trello Layout</h3>
+      <div>
+        <label class="container">
+          <input type="radio" name="trello_ui" id="trelloUI-default" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-template"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M4 4m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z"
+            />
+            <path
+              d="M4 12m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+            />
+            <path d="M14 12l6 0" />
+            <path d="M14 16l6 0" />
+            <path d="M14 20l6 0" />
+          </svg>
+          <span class="text">Trello Default Layout </span>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div>
+        <label class="container">
+          <input type="radio" name="trello_ui" id="trelloUI-newUI" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-table"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M4 11h4a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-2a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-6a1 1 0 0 1 1 -1z"
+            />
+            <path
+              d="M21 12v6a3 3 0 0 1 -2.824 2.995l-.176 .005h-6a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1z"
+            />
+            <path
+              d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v2a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h6z"
+            />
+            <path
+              d="M9 4v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a3 3 0 0 1 2.824 -2.995l.176 -.005h2a1 1 0 0 1 1 1z"
+            />
+          </svg>
+          <span class="text">Compact View - Two Column Cards </span>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div>
+        <label class="container">
+          <input type="radio" name="trello_ui" id="trelloUI-oldUI" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-clipboard-text"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+            />
+            <path
+              d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+            />
+            <path d="M9 12h6" />
+            <path d="M9 16h6" />
+          </svg>
+          <span class="text">Classic View - Single Column Cards</span>
+          <span class="checkmark"></span>
+        </label>
+      </div>
       <div class="option">
         <label>
           <input type="checkbox" id="cardCountInList" />
@@ -34,6 +123,6 @@
 
     <button id="save">Save</button>
 
-    <script type="text/javascript" src="options.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
   </body>
 </html>

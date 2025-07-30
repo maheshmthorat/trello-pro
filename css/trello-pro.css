@@ -16,32 +16,3 @@
   font-weight: bold;
   z-index: 9999;
 }
-
-[aria-labelledby="card-back-name"] {
-  width: 800px !important;
-}
-
-[aria-labelledby="card-back-name"] > div > div {
-  display: block !important;
-  max-height: 100% !important;
-}
-
-[aria-labelledby="card-back-name"] > div > div > div {
-  display: block !important;
-  height: auto !important;
-  overflow: visible !important;
-}
-[aria-labelledby="card-back-name"] nav {
-  z-index: 999999999 !important;
-  top: 0 !important;
-}
-aside,
-aside > div {
-  width: 100% !important;
-}
-
-main > div {
-  width: 100% !important;
-  min-width: 100% !important;
-  max-width: 100% !important;
-}

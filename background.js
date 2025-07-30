@@ -11,6 +11,7 @@ function change(tabId, key, cssFile) {
 chrome.runtime.onInstalled.addListener(function (details) {
    if (details.reason === 'install') {
       chrome.storage.sync.set({
+         trello_ui: 'newUI',
          cardCountInList: true,
          cardTotalCount: true,
          hideCardCover: false
