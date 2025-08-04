@@ -35,8 +35,8 @@
 ## 📸 Screenshots
 
 ![Before / After](/screenshots/Before-After.png)
-![Options](/screenshots/Options.png)
 ![Board Search](/screenshots/Board-Search.png)
+![Options](/screenshots/Options.png)
 
 ## 🔐 Permissions
 
