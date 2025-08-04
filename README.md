@@ -27,12 +27,16 @@
 - 🖼️ **Hide Card Cover**  
   Automatically hides image covers from cards for a cleaner and more compact Trello board view.
 
+- 🔍 **Board Search Button**
+  Adds a quick-access "Board Search" on the Trello homepage, so you can jump between boards faster.
+
 ---
 
 ## 📸 Screenshots
 
 ![Before / After](/screenshots/Before-After.png)
 ![Options](/screenshots/Options.png)
+![Board Search](/screenshots/Board-Search.png)
 
 ## 🔐 Permissions
 

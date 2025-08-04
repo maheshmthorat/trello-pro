@@ -18,9 +18,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 var interval = setInterval(function () {
   init();
-}, 2000);
+}, 3000);
 
-init();
+document.addEventListener('DOMContentLoaded', function () {
+  init();
+});
 
 function showCardId(cardHref, card) {
   let match = cardHref.match(/\/(\d+)-/);
@@ -87,10 +89,43 @@ function change(options) {
   }
 }
 
+var loadBoardSearch = setInterval(function () {
+  hookLoadBoardSearch();
+}, 1000);
+
+function hookLoadBoardSearch() {
+  const appendElement = document.querySelector('.home-sticky-container');
+  if (!document.querySelector('.boardSearch') && appendElement) {
+    appendElement.insertAdjacentHTML('afterend', `
+  <button class="boardSearch">
+    <svg fill="none" viewBox="0 0 16 16" role="presentation" class="_1reo15vq _18m915vq _syaz1r31 _lcxvglyw _s7n4yfq0 _vc881r31 _1bsbpxbi _4t3ipxbi">
+      <path fill="currentcolor" fill-rule="evenodd" d="M2 3.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h1.833v-7zm3.333 0v7h2.334v-7zm3.834 0v7H11a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5zM0 4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm14.5 7.75V7H16v4.75A3.25 3.25 0 0 1 12.75 15H5v-1.5h7.75a1.75 1.75 0 0 0 1.75-1.75" clip-rule="evenodd"></path>
+    </svg>
+    Board Search
+  </button>
+`);
+    document.querySelector('.boardSearch').addEventListener('click', () => {
+      const bKeyEvent = new KeyboardEvent('keydown', {
+        key: 'b',
+        code: 'KeyB',
+        keyCode: 66,
+        which: 66,
+        bubbles: true,
+        cancelable: false
+      });
+      document.querySelector('button').dispatchEvent(bKeyEvent);
+    });
+
+  }
+}
+
 
 function trelloLayoutUI(option) {
   if (document.getElementById("trello-pro-ui-style")) { document.getElementById("trello-pro-ui-style").remove(); };
   let styleContent = '';
+  if (!option) {
+    option = newUI;
+  }
   if (option == 'default') {
     styleContent = ``;
   }
