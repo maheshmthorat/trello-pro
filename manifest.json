@@ -1,8 +1,8 @@
 {
-  "manifest_version": 4,
+  "manifest_version": 3,
   "name": "Trello Pro",
   "short_name": "Trello-Pro",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Bring back Trello's classic UI and boost productivity with smart card counters, list stats, and more.",
   "author": "Mahesh Thorat",
   "permissions": ["tabs", "storage", "scripting"],

@@ -17,21 +17,24 @@
   z-index: 99999;
 }
 
+main {
+  position: relative;
+}
+
 .boardSearch {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  position: sticky;
+  bottom: 90%;
+  left: 0;
   z-index: 99999;
   color: #1d7afc;
-  background-color: oklch(93.2% 0.032 255.585);
+  background-color: #e9f2ff;
   border: none;
   outline: none;
   padding: 8px 18px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 500;
+  width: 100%;
 }
 
 .boardSearch svg {
