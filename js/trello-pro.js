@@ -94,7 +94,7 @@ var loadBoardSearch = setInterval(function () {
 }, 1000);
 
 function hookLoadBoardSearch() {
-  const appendElement = document.querySelector('header ul');
+  const appendElement = document.querySelector('header ul') || document.querySelector('nav ul');
   if (!document.querySelector('.boardSearch') && appendElement) {
     appendElement.insertAdjacentHTML('afterend', `
 <ul>
