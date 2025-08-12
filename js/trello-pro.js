@@ -90,16 +90,18 @@ function change(options) {
 }
 
 var loadBoardSearch = setInterval(function () {
-  hookLoadBoardSearch();
+  hookLoadBoardSearch(document.querySelector('nav div:nth-child(2)'), 'btn1');
+  hookLoadBoardSearch(document.querySelector('header ul'), 'btn2');
+  // hookLoadBoardSearch(document.querySelector('nav ul'), 'btn3');
 }, 1000);
 
-function hookLoadBoardSearch() {
-  const appendElement = document.querySelector('header ul') || document.querySelector('nav ul');
-  if (!document.querySelector('.boardSearch') && appendElement) {
+function hookLoadBoardSearch(element, customCls) {
+  const appendElement = element;
+  if (!document.querySelector('.boardSearch.' + customCls) && appendElement) {
     appendElement.insertAdjacentHTML('afterend', `
 <ul>
   <li>
-    <button class="boardSearch">
+    <button class="boardSearch ${customCls}">
       <svg fill="none" viewBox="0 0 16 16" role="presentation" class="_1reo15vq _18m915vq _syaz1r31 _lcxvglyw _s7n4yfq0 _vc881r31 _1bsbpxbi _4t3ipxbi">
         <path fill="currentcolor" fill-rule="evenodd" d="M2 3.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h1.833v-7zm3.333 0v7h2.334v-7zm3.834 0v7H11a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5zM0 4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm14.5 7.75V7H16v4.75A3.25 3.25 0 0 1 12.75 15H5v-1.5h7.75a1.75 1.75 0 0 0 1.75-1.75" clip-rule="evenodd"></path>
       </svg>
@@ -108,7 +110,7 @@ function hookLoadBoardSearch() {
   </li>
 </ul>
 `);
-    document.querySelector('.boardSearch').addEventListener('click', () => {
+    document.querySelector('.boardSearch.' + customCls).addEventListener('click', () => {
       const bKeyEvent = new KeyboardEvent('keydown', {
         key: 'b',
         code: 'KeyB',
